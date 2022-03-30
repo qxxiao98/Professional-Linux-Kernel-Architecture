@@ -5,7 +5,7 @@
     "private": true,
     "scripts": {
         "build": "make html",
-        "predeploy": "git config user.name qxxiao98 && git config user.email 1785099588@qq.com && touch build/html/.nojekyll && cp README.md build/html && yarn run build",
-        "deploy": "git commit -a -m 'update' && git push origin main && gh-pages -d build/html"
+        "predeploy": "yarn run build && touch build/html/.nojekyll && cp README.md build/html",
+        "deploy": "git config user.name qxxiao98 && git config user.email 1785099588@qq.com && git commit -a -m 'update' && git push origin main && gh-pages -d build/html"
     }
 }
