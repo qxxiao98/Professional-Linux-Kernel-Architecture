@@ -1,0 +1,11 @@
+{
+    "homepage": "https://qxxiao98.github.io/Professional-Linux-Kernel-Architecture",
+    "name": "professional-linux-kernel-architecture",
+    "version": "1.0",
+    "private": true,
+    "scripts": {
+        "build": "make html",
+        "predeploy": "git config user.name qxxiao98 && git config user.email 1785099588@qq.com && yarn run build",
+        "deploy": "gh-pages -d build/html"
+    }
+}
