@@ -6,6 +6,6 @@
     "scripts": {
         "build": "make html",
         "predeploy": "yarn run build && touch build/html/.nojekyll && cp README.md build/html",
-        "deploy": "git config user.name qxxiao98 && git config user.email 1785099588@qq.com && git commit -a -m 'update' && git push origin main && gh-pages -d build/html -t"
+        "deploy": "git config user.name qxxiao98 && git config user.email 1785099588@qq.com && git commit -am 'update' && git push origin main && gh-pages -d build/html -t"
     }
 }
